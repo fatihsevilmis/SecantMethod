@@ -24,7 +24,7 @@ double secant(double a, double b)
 		f1 = f(b);
 		
 		if(!(fabs(f1 - f0)<Tolerance))
-    	{
+    		{
     		c = b - (f1*(a-b))/(f0 - f1);
 			a = b;
 			b = c;
@@ -52,11 +52,11 @@ int main()
     if (root) 
 	{
         printf("Root of the equation: %f\n", root);
-    } 
+    	} 
 	else 
 	{
         printf("No Root Found in the Specified Range.");
-    }
+    	}
     
 	getch();
 }
